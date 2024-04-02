@@ -1,38 +1,43 @@
-window.onload = function() {
-    var stats = ['COS', 'STR', 'AGI', 'CHA', 'WIS', 'INT', 'PER'];
-    var availablePoints = document.getElementById('availablePoints');
-    var maxStatValue = document.getElementById('maxStatValue');
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
 
-    stats.forEach(function(stat) {
-        var increaseButton = document.getElementById(stat).getElementsByClassName('increase')[0];
-        var decreaseButton = document.getElementById(stat).getElementsByClassName('decrease')[0];
-        var valueElement = document.getElementById(stat).getElementsByClassName('value')[0];
+h1 {
+    color: #333;
+}
 
-        increaseButton.onclick = function() {
-            var currentValue = parseInt(valueElement.textContent);
-            var cost = (currentValue >= 12 && currentValue < 15) ? 2 : (currentValue >= 15 && currentValue < 18) ? 3 : 1;
-            if (availablePoints.value >= cost && currentValue < maxStatValue.value) {
-                valueElement.textContent = currentValue + 1;
-                availablePoints.value = parseInt(availablePoints.value) - cost;
-            }
-        };
+#stats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
-        decreaseButton.onclick = function() {
-            var currentValue = parseInt(valueElement.textContent);
-            var gain = (currentValue > 12 && currentValue <= 15) ? 2 : (currentValue > 15 && currentValue <= 18) ? 3 : 1;
-            if (currentValue > 7) {
-                valueElement.textContent = currentValue - 1;
-                availablePoints.value = parseInt(availablePoints.value) + gain;
-            }
-        };
-    });
+.stat {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
 
-    availablePoints.onchange = function() {
-        if (this.value < 0) {
-            this.value = 0;
-        }
-    };
+.value {
+    margin: 0 10px;
+}
 
-    // Set the initial value of available points to 34
-    availablePoints.value = 34;
-};
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type=number] {
+    margin-left: 10px;
+    width: 50px;
+}
