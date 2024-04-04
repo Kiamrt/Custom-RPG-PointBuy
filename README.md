@@ -1,2 +1,2 @@
 # kiamrt.github.io
-Custom GDR point buy for my dnd campaign
+Custom GDR point buy for my RPG campaign
