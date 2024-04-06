@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Point Buy Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <h1>Point Buy Calculator</h1>
+    <h1 class="title">Point Buy Calculator</h1>
     <div id="stats">
-        <div class="stat" id="COS">COS: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="STR">STR: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="AGI">AGI: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="CHA">CHA: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="WIS">WIS: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="INT">INT: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
-        <div class="stat" id="PER">PER: <span class="value">7</span><button class="increase">+</button><button class="decrease">-</button></div>
+        <div class="stat" id="COS">
+            <div class="statName">COS:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="STR">
+            <div class="statName">STR:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="AGI">
+            <div class="statName">AGI:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="CHA">
+            <div class="statName">CHA:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="WIS">
+            <div class="statName">WIS:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="INT">
+            <div class="statName">INT:</div><span class="value">7</span><button class="increase">+</button><button
+                class="decrease">-</button>
+        </div>
+        <div class="stat" id="PER">
+            <div class="statName">PER:</div><span class="value">7</span>
+            <button class="increase">+</button><button class="decrease">-</button>
+        </div>
     </div>
-    <div>
-        Available Points: <input type="number" id="availablePoints" value="34">
+    <div class="statFooter">
+        <div class="available">
+            Available Points
+            <input type="number" id="availablePoints">
+        </div>
+        <div class="maxStats">
+            Max Stats Value
+            <input type="number" id="maxStatValue" value="18">
+        </div>
     </div>
-    <div>
-        Max Stat Value: <input type="number" id="maxStatValue" value="18">
-    </div>
-    <script src="main.js"></script>
+    <div class="racist">
+        
+    </div> <br>
+    <button class="copy" onclick="getAllStats()" >COPIA</button>
+    <table id="output" style="display: none;">
+
+    </table>
+    <script src="main.js">
+        
+    </script>
 </body>
 </html>

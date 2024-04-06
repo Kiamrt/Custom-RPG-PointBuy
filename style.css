@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: 	#252526;
+    padding: 20px;
+    color: white;
+}
+
+.title{
+    font-size: 50px;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.value {
+    margin: 0 10px;
+    width:40px;
+    font-size: 20px;
+}
+
+.statName{
+    width: 50px;
+    font-size: 20px;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #2d2d30;
+    color: white;
+    cursor: pointer;
+}
+
+.stat button{
+    font-size: 31px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.stat{
+    background-color: 	#3e3e42;
+    padding: 10px;
+    width: 220px;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type=number] {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.statFooter{
+    background-color: 	#3e3e42;
+    padding: 10px;
+    width: 340px;
+    border-radius: 12px;
+}
+
+.statFooter div{
+   font-size: 30px;
+   width: 330px;
+}
+
+.statFooter input{
+    height: 26px;
+    font-size: 20px;
+    border-radius: 8px;
+    float: right;
+ }
+
+.available{
+    height: 44px;
+}
+
+.maxStats{
+    height: 32px;
+}
+
+.copy{
+    height: 32px;
+    width: 120px;
+    border-radius: 8px;
+}
+

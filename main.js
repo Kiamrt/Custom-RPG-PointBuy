@@ -1,5 +1,26 @@
+var stats = ['COS', 'STR', 'AGI', 'CHA', 'WIS', 'INT', 'PER'];
+
+function copyToClipboard(textToCopy) {
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(textToCopy);
+  
+    // Alert the copied text
+    alert("Copiato il testo!! NOWAY");
+}
+
+function getAllStats() {
+    let text = "";
+    const output = document.getElementById('output');
+    stats.forEach(function (stat) {
+        var valueElement = document.getElementById(stat).getElementsByClassName('value')[0];
+        text += stat + "\t" + valueElement.textContent + "\n";
+    });
+    output.innerText = text;
+    copyToClipboard(text);
+}
+
+
 window.onload = function() {
-    var stats = ['COS', 'STR', 'AGI', 'CHA', 'WIS', 'INT', 'PER'];
     var availablePoints = document.getElementById('availablePoints');
     var maxStatValue = document.getElementById('maxStatValue');
 
