@@ -7,56 +7,174 @@
 </head>
 
 <body>
-    <h1 class="title">Point Buy Calculator</h1>
-    <div id="stats">
-        <div class="stat" id="COS">
-            <div class="statName">COS:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
+    <div class="content">
+    <div class="left-col">
+        <h1 class="title">Point Buy Calculator</h1>
+        <div id="stats">
+            <div class="row" id="COS">
+                <div class="stat">
+                    <div class="statName">COS:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                    0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="STR">
+                <div class="stat">
+                    <div class="statName">STR:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="AGI">
+                <div class="stat">
+                    <div class="statName">AGI:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="CHA">
+                <div class="stat">
+                    <div class="statName">CHA:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="WIS">
+                <div class="stat">
+                    <div class="statName">WIS:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div> 
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="INT">
+                <div class="stat">
+                    <div class="statName">INT:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
+            <div class="row" id="PER">
+                <div class="stat">
+                    <div class="statName">PER:</div>
+                    <span class="value">7</span>
+                    <button class="increase">+</button>
+                    <button class="decrease">-</button>
+                </div>
+                <div class="raceIncrement">
+                    <div>
+                        0
+                    </div>
+                </div>
+                <div class="spacer"></div> 
+                <div class="spacer">=</div> 
+                <div class="spacer"></div>
+                <div class="result">7</div>
+            </div>
         </div>
-        <div class="stat" id="STR">
-            <div class="statName">STR:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
+        <div class="statFooter">
+            <div class="available">
+                Available Points
+                <input type="number" id="availablePoints">
+            </div>
+            <div class="maxStats">
+                Max Stats Value
+                <input type="number" id="maxStatValue" value="18">
+            </div>
         </div>
-        <div class="stat" id="AGI">
-            <div class="statName">AGI:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
-        </div>
-        <div class="stat" id="CHA">
-            <div class="statName">CHA:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
-        </div>
-        <div class="stat" id="WIS">
-            <div class="statName">WIS:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
-        </div>
-        <div class="stat" id="INT">
-            <div class="statName">INT:</div><span class="value">7</span><button class="increase">+</button><button
-                class="decrease">-</button>
-        </div>
-        <div class="stat" id="PER">
-            <div class="statName">PER:</div><span class="value">7</span>
-            <button class="increase">+</button><button class="decrease">-</button>
-        </div>
-    </div>
-    <div class="statFooter">
-        <div class="available">
-            Available Points
-            <input type="number" id="availablePoints">
-        </div>
-        <div class="maxStats">
-            Max Stats Value
-            <input type="number" id="maxStatValue" value="18">
-        </div>
-    </div>
-    <div class="racist">
-        
-    </div> <br>
-    <button class="copy" onclick="getAllStats()" >COPIA</button>
-    <table id="output" style="display: none;">
+        <div class="racist">
 
-    </table>
-    <script src="main.js">
-        
-    </script>
+        </div> <br>
+        <button class="copy" onclick="getAllStats()" >COPIA</button>
+        <table id="output" style="">
+
+        </table>
+        <div id="character">
+
+        </div>
+    </div>
+    <div class="right-col">
+        <h1 class="title">Scegli la tua razza razzista</h1>
+        <div class="details">
+            <div class="race-left">
+                <label for="races">Choose a race:</label>
+                <select name="races" id="raceList" onclick="character.selectRace(this.value)"> 
+
+                </select><br><br>
+                <div class="raceInfo">
+                    <h1 id="raceName"></h1>
+                    <p id="raceDescription"></p><br>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>  
+            <div id="racePicture">
+                <img src="" alt="" id="actualPicture">
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="data/races.js"></script>
+    <script src="data/classes.js"></script>
+    <script src="data/main.js"></script>
 </body>
 </html>
