@@ -57,12 +57,12 @@ const races = {
             cos: 2,
             str: 0,
             agi: -1,
-            cha: -2,
+            cha: 0,
             wis: 1,
             int: 0,
-            per: 1
+            per: 0
         },
-        description: "Piccole creature robuste e resistenti, abili nella lavorazione dei metalli e nella costruzione di armi e armature."
+        description: "Esseri umani, adattabili e versatili, capaci di eccellere in molte discipline e mestieri."
     },
     Orco: {
         name: "Orco",
