@@ -35,9 +35,9 @@ class Character {
 
     increaseStat(stat){
         let statCost = 
-            (stat >= 18) ? 0 : 
+            (stat >= maxStatValue) ? 0 : 
             (stat >= priceIncrease1 && stat < priceIncrease2) ? 2 : 
-            (stat >= priceIncrease2 && stat < 18) ? 3 : 1;
+            (stat >= priceIncrease2 && stat < maxStatValue) ? 3 : 1;
 
         if(this.availablePoints - statCost >= 0){
             this.availablePoints -= statCost;

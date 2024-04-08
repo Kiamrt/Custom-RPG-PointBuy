@@ -139,7 +139,7 @@
             </div>
             <div class="maxStats">
                 Max Stats Value
-                <input type="number" id="maxStatValue" value="18">
+                <input type="number" id="maxStatValue" value="18" onchange="maxStatValue = this.value">
             </div>
         </div>
         <div class="racist">
@@ -154,11 +154,11 @@
         </div>
     </div>
     <div class="right-col">
-        <h1 class="title">Scegli la tua razza razzista</h1>
+        <h1 class="title">Scegli la tua razza</h1>
         <div class="details">
             <div class="race-left">
                 <label for="races">Choose a race:</label>
-                <select name="races" id="raceList" onclick="character.selectRace(this.value)"> 
+                <select name="races" id="raceList" onchange="character.selectRace(this.value)"> 
 
                 </select><br><br>
                 <div class="race-info">

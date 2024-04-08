@@ -10,7 +10,7 @@ const races = {
             int: 0,
             per: 0
         },
-        description: "Lorem ipsum."
+        description: ""
     },
     Umano: {
         name: "Umano",
@@ -36,6 +36,7 @@ const races = {
             int: 0,
             per: 0
         },
+        image: "img/Elfo.jpg",
         description: "Razza che ti permette di avere le orecchie lunghe e fighe"
     },
     Drow: {
