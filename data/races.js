@@ -103,7 +103,6 @@ const races = {
             int: -999,
             per: 50
         },
-        image: "img/Marvjng.jpg",
-        description: "Popolo di sventurati che vivono nella giungla della landa degli evocatori. Essi sono deboli e filippini e rachitici, ma possono rollare le palle di neve più grandi del mondo."
+        description: "ritardato che si è preso 200kg di carretto sul piede."
     }
 };
