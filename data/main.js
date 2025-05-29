@@ -28,25 +28,51 @@ window.onload = function() {
     var availablePoints = document.getElementById('availablePoints');
     var maxStatValueObject = document.getElementById('maxStatValue');
 
-    stats.forEach(
-    function(stat) {
+    stats.forEach(function(stat) {
         var increaseButton = document.getElementById(stat).getElementsByClassName('increase')[0];
         var decreaseButton = document.getElementById(stat).getElementsByClassName('decrease')[0];
-        var raceIncrement = document.getElementById(stat).getElementsByClassName('raceIncrement')[0].innerText;
         var valueElement = document.getElementById(stat).getElementsByClassName('value')[0];
-
         let select = getStat(stat);
-
-        //Gestire punti available se vanno in negativo
-        increaseButton.onclick = function() {
-            select = character.increaseStat(select);
-            character.updateOnScreen(select,valueElement);
-        };
-
-        decreaseButton.onclick = function() {
-            select = character.decreaseStat(select);
-            character.updateOnScreen(select,valueElement);
-        };
+    
+        // Setup hold functionality for a button
+        function setupHold(button, action) {
+            let holdTimer;
+            let intervalId;
+    
+            function doAction() {
+                select = action(select);
+                character.updateOnScreen(select, valueElement);
+            }
+    
+            function startHold() {
+                doAction(); // Immediate action on first click/tap
+                holdTimer = setTimeout(() => {
+                    intervalId = setInterval(doAction, 60); // Repeat every 100ms
+                }, 350); // Start repeating after 500ms hold
+            }
+    
+            function stopHold() {
+                clearTimeout(holdTimer);
+                clearInterval(intervalId);
+            }
+    
+            // Mouse events
+            button.addEventListener('mousedown', startHold);
+            button.addEventListener('mouseup', stopHold);
+            button.addEventListener('mouseleave', stopHold);
+    
+            // Touch events
+            button.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                startHold();
+            });
+            button.addEventListener('touchend', stopHold);
+            button.addEventListener('touchcancel', stopHold);
+        }
+    
+        // Apply to both buttons
+        setupHold(increaseButton, character.increaseStat.bind(character));
+        setupHold(decreaseButton, character.decreaseStat.bind(character));
     });
 
     character.updateRaceIncrement();
@@ -54,7 +80,7 @@ window.onload = function() {
     loadRaces();
 
 
-    // Set the initial value of available points to 34
+    // Set the initial value of available points to defaultAvailablePoints
     availablePoints.value = defaultAvailablePoints;
     maxStatValueObject.value = maxStatValue;
 };

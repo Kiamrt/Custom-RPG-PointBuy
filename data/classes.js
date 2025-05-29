@@ -1,11 +1,11 @@
-let initStat = 7;
+let initStat = -25;
 
 const stats = ['COS', 'STR', 'AGI', 'CHA', 'WIS', 'INT', 'PER'];
-var maxStatValue = 18;
-var minStatValue = 7;
-const priceIncrease1 = 12;
-const priceIncrease2 = 15;
-var defaultAvailablePoints = 34;
+var maxStatValue = 35;
+var minStatValue = -25;
+const priceIncrease1 = 14;
+const priceIncrease2 = 24;
+var defaultAvailablePoints = 200;
 
 class Race {
     constructor({name, modifiedStats = {cos: 0, str: 0, agi: 0, cha: 0, wis: 0, int: 0, per: 0}, description}) {
@@ -118,4 +118,4 @@ class Character {
     }
 }
 
-let character = new Character({race: races["Default"], name: "Player 1", availablePoints: 34});
+let character = new Character({race: races["Default"], name: "Player 1", availablePoints: defaultAvailablePoints});
