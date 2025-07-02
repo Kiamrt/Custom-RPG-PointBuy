@@ -2,11 +2,11 @@ const races = {
     Default: {
         name: "Default",
         modifiedStats: {
-            cos: 0,
+            vit: 0,
             str: 0,
             agi: 0,
             cha: 0,
-            wis: 0,
+            wil: 0,
             int: 0,
             per: 0
         },
@@ -15,94 +15,67 @@ const races = {
     Umano: {
         name: "Umano",
         modifiedStats: {
-            cos: 0,
-            str: 0,
-            agi: 0,
-            cha: 0,
-            wis: 0,
-            int: 0,
-            per: 0
+            vit: 2,
+            str: 2,
+            agi: 2,
+            cha: 2,
+            wil: 2,
+            int: 2,
+            per: 2
         },
-        description: "Esseri umani, adattabili e versatili, capaci di eccellere in molte discipline e mestieri."
+        description: "Una razza che si è fatta forte della sua adattabilitá in svariati campi per espandersi e presidiare varie zone all’interno del mondo, tendono ad avere metodi discordi di gestire le comunita’ e le societa’ che si sono venute a creare, ciononostante vi sono vari accordi di non belligeranza e rotte commerciali tutt’ora in utilizzo. Eccetto che per le dimensioni ed il colore della pelle, le capacità individuali degli umani sono pressoché le stesse tra le loro etnie"
     },
     Elfo: {
         name: "Elfo",
         modifiedStats: {
-            cos: 0,
-            str: -1,
-            agi: 1,
+            vit: -2,
+            str: -2,
+            agi: 6,
             cha: 0,
-            wis: 0,
-            int: 1,
-            per: 0
+            wil: 4,
+            int: 0,
+            per: 3
         },
-        image: "img/Elfo.jpg",
-        description: "Razza che ti permette di avere le orecchie lunghe e fighe"
+        //image: "img/Elfo.jpg",
+        description: "si sono addentrati nelle foreste che hanno fatto loro. Sono particolarmente agili ed in contatto con la natura"
     },
     Drow: {
         name: "Drow",
         modifiedStats: {
-            cos: 0,
-            str: 0,
+            vit: -3,
+            str: -2,
             agi: 0,
-            cha: -1,
-            wis: 0,
-            int: 1,
-            per: 1
+            cha: 4,
+            wil: 0,
+            int: 6,
+            per: 3
         },
-        description: "Elfi corrotti e malvagi, abili nell'arte dell'inganno e della magia oscura."
+        description: "Abbastanza rari oggigiorno. Si insediarono in delle caverne abbastanza ostili dove riuscirono a sopravvivere affinando le loro capacità magiche ed il loro intelletto. Caratterizzati da un colorito più smorto / bluastro."
     },
     Nano: {
         name: "Nano",
         modifiedStats: {
-            cos: 1,
+            vit: 6,
             str: 0,
-            agi: -1,
-            cha: 0,
-            wis: 1,
-            int: 0,
-            per: 0
+            agi: -3,
+            cha: 3,
+            wil: 1,
+            int: 4,
+            per: -2
         },
-        description: "Esseri umani, adattabili e versatili, capaci di eccellere in molte discipline e mestieri."
+        description: "adattabili e versatili, capaci di eccellere in molte discipline e mestieri."
     },
     Orco: {
         name: "Orco",
         modifiedStats: {
-            cos: 1,
-            str: 1,
-            agi: 0,
-            cha: 0,
-            wis: 0,
-            int: -1,
+            vit: 5,
+            str: 5,
+            agi: 3,
+            cha: -4,
+            wil: 0,
+            int: -2,
             per: 0
         },
-        description: "Creature forti e brutali, con una natura guerriera e una società basata sulla forza e il dominio."
-    },
-    Marvjng: {
-        name: "Marvjng",
-        modifiedStats: {
-            cos: -99,
-            str: -99,
-            agi: 100,
-            cha: -99,
-            wis: -99,
-            int: -99,
-            per: -99
-        },
-        image: "img/Marvjng.jpg",
-        description: "Popolo di sventurati che vivono nella giungla della landa degli evocatori. Essi sono deboli e filippini e rachitici, ma possono rollare le palle di neve più grandi del mondo."
-    },
-    AlbyRotelle: {
-        name: "AlbyRotelle",
-        modifiedStats: {
-            cos: -99,
-            str: -99,
-            agi: -300,
-            cha: -50,
-            wis: -200,
-            int: -999,
-            per: 50
-        },
-        description: "ritardato che si è preso 200kg di carretto sul piede."
+        description: "Dalla perlle verdastra, tendevano all'essere belligeranti per quanto recentemente stiano cambiando, con una natura guerriera e una società basata sulla forza e sulla meritocrazia."
     }
 };

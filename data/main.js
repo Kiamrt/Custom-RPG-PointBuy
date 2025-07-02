@@ -100,16 +100,16 @@ function getAllStats() {
 
 function getStat(stat){
     switch(stat){
-        case "COS":
-            return character.stats.cos;
+        case "VIT":
+            return character.stats.vit;
         case "STR":
             return character.stats.str;
         case "AGI":
             return character.stats.agi;
         case "CHA":
             return character.stats.cha
-        case "WIS":
-            return character.stats.wis;
+        case "WIL":
+            return character.stats.wil;
         case "INT":
             return character.stats.int;
         case "PER":
@@ -119,16 +119,16 @@ function getStat(stat){
 
 function getRaceStat(stat){
     switch(stat){
-        case "COS":
-            return character.race.modifiedStats.cos;
+        case "VIT":
+            return character.race.modifiedStats.vit;
         case "STR":
             return character.race.modifiedStats.str;
         case "AGI":
             return character.race.modifiedStats.agi;
         case "CHA":
             return character.race.modifiedStats.cha
-        case "WIS":
-            return character.race.modifiedStats.wis;
+        case "WIL":
+            return character.race.modifiedStats.wil;
         case "INT":
             return character.race.modifiedStats.int;
         case "PER":

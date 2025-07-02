@@ -1,6 +1,6 @@
 let initStat = -25;
 
-const stats = ['COS', 'STR', 'AGI', 'CHA', 'WIS', 'INT', 'PER'];
+const stats = ['VIT', 'STR', 'AGI', 'CHA', 'WIL', 'INT', 'PER'];
 var maxStatValue = 35;
 var minStatValue = -25;
 const priceIncrease1 = 14;
@@ -8,7 +8,7 @@ const priceIncrease2 = 24;
 var defaultAvailablePoints = 200;
 
 class Race {
-    constructor({name, modifiedStats = {cos: 0, str: 0, agi: 0, cha: 0, wis: 0, int: 0, per: 0}, description}) {
+    constructor({name, modifiedStats = {vit: 0, str: 0, agi: 0, cha: 0, wil: 0, int: 0, per: 0}, description}) {
         this.name = name;
         this.modifiedStats = modifiedStats;
         this.description = description;
@@ -17,11 +17,11 @@ class Race {
 
 class Character {
     constructor({race, subRace, name, availablePoints, stats = {
-        cos: initStat, 
+        vit: initStat, 
         str: initStat, 
         agi: initStat, 
         cha: initStat, 
-        wis: initStat, 
+        wil: initStat, 
         int: initStat, 
         per: initStat
         }, cClass}) {
