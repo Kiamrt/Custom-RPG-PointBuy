@@ -29,9 +29,9 @@ const races = {
         name: "Elfo",
         modifiedStats: {
             vit: -2,
-            str: -2,
+            str: 0,
             agi: 6,
-            cha: 0,
+            cha: -3,
             wil: 4,
             int: 0,
             per: 3
@@ -59,7 +59,7 @@ const races = {
             str: 0,
             agi: -3,
             cha: 3,
-            wil: 1,
+            wil: 0,
             int: 4,
             per: -2
         },
